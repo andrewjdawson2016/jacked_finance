@@ -4,6 +4,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import IconButton from '@material-ui/core/IconButton'
 import MenuIcon from '@material-ui/icons/Menu';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 function AppBarMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -28,10 +29,10 @@ function AppBarMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Suggest</MenuItem>
-        <MenuItem onClick={handleClose}>Login</MenuItem>
-        <MenuItem onClick={handleClose}>Signup</MenuItem>
+        <MenuItem component={Link} to={"about"}>About</MenuItem>
+        <MenuItem component={Link} to={"suggest"}>Suggest</MenuItem>
+        <MenuItem component={Link} to={"login"}>Log In</MenuItem>
+        <MenuItem component={Link} to={"signup"}>Sign Up</MenuItem>
       </Menu>
     </div>
   );

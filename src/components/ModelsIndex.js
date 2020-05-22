@@ -2,6 +2,8 @@ import React from 'react';
 import { Grid } from '@material-ui/core';
 import ModelCard from './ModelCard'
 
+// TODO: move this to pages level
+// TODO: introduce constants for page routing
 const models = [
   {
     name: "Rental Property",
