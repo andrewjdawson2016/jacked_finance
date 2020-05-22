@@ -29,10 +29,10 @@ function AppBarMenu() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem component={Link} to={"about"}>About</MenuItem>
-        <MenuItem component={Link} to={"suggest"}>Suggest</MenuItem>
-        <MenuItem component={Link} to={"login"}>Log In</MenuItem>
-        <MenuItem component={Link} to={"signup"}>Sign Up</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={"about"}>About</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={"suggest"}>Suggest</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={"login"}>Log In</MenuItem>
+        <MenuItem onClick={handleClose} component={Link} to={"signup"}>Sign Up</MenuItem>
       </Menu>
     </div>
   );
