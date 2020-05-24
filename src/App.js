@@ -7,6 +7,7 @@ import Signup from './pages/Signup';
 import About from './pages/About';
 import Suggest from './pages/Suggest';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { createStore } from 'redux';
 
 function App() {
   return (
